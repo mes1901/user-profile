@@ -21,3 +21,17 @@ spl_autoload_register(function ($class_name) {
         }
     }
 });
+
+if(file_exists(ROOT . '/config/env.php')) {
+    include_once ROOT . '/config/env.php';
+}
+if(!function_exists('env')) {
+    function env($key, $default = null)
+    {
+        $value = getenv($key);
+        if ($value === false) {
+            return $default;
+        }
+        return $value;
+    }
+}

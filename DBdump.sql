@@ -13,8 +13,8 @@
 
 
 -- Дамп структуры базы данных users_profile
-CREATE DATABASE IF NOT EXISTS `users_profile` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
-USE `users_profile`;
+CREATE DATABASE IF NOT EXISTS `db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+USE `db`;
 
 -- Дамп структуры для таблица users_profile.users
 CREATE TABLE IF NOT EXISTS `users` (

@@ -62,7 +62,7 @@ class UserController extends Controller
             $this->render('profile_view', array_merge($data, $commonData));
         }
 
-//        header("Location: /user/registerForm");
+        header("Location: /user/registerForm");
     }
 
     /**
